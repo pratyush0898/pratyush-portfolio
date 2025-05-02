@@ -13,7 +13,8 @@ export const metadata = {
     "Welcome to the portfolio website of Pratyush Kumar, a talented web developer from India. Explore his skills, projects, and contact him for collaborations.",
   keywords: "Pratyush, web developer, portfolio, India, projects, contact, collaborations",
   author: "Pratyush Kumar",
-  robots: "index, follow"
+  robots: "index, follow",
+  google-site-verificatio: "r_ilpIOHAqgtXQwALiYlqGuTLMRBw93JfkYmQAF5SIk"
 };
 
 export default function RootLayout({ children }) {
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content={metadata.author} />
         <meta name="robots" content={metadata.robots} />
+        <meta name="google-site-verification" content="r_ilpIOHAqgtXQwALiYlqGuTLMRBw93JfkYmQAF5SIk" />
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#000000" />
         <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
@@ -40,7 +42,7 @@ export default function RootLayout({ children }) {
       {/* Botpress Webchat */}
       <Script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js" strategy="afterInteractive" />
       <Script src="https://files.bpcontent.cloud/2024/11/13/13/20241113130426-YK6QCUIT.js" strategy="afterInteractive" />
-
+        
       <body className={`page-content`}>
         <KursorInit />
         <NavBar />
