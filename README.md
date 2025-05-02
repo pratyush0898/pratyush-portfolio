@@ -4,9 +4,7 @@ Welcome to Pratyush Portfolio! This is my personal portfolio site, showcasing my
 
 ## Site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/06a150fc-4ee0-4dae-80c1-812bf15360a0/deploy-status)](https://app.netlify.com/sites/nvmpratyush/deploys)
-
-Check out the live site: [Pratyush Portfolio Demo](https://pratyush.io)
+Check out the live site: [Pratyush Portfolio Demo](https://nvmpratyush.vercel.app/)
 
 ## Tech-stacks
 
@@ -15,9 +13,8 @@ Check out the live site: [Pratyush Portfolio Demo](https://pratyush.io)
 -   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 -   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 -   ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
--   ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
--   ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
--   ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34)
+-   ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+-   ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## Features
 
