@@ -14,7 +14,7 @@ export const metadata = {
   keywords: "Pratyush, web developer, portfolio, India, projects, contact, collaborations",
   author: "Pratyush Kumar",
   robots: "index, follow",
-  google-site-verificatio: "r_ilpIOHAqgtXQwALiYlqGuTLMRBw93JfkYmQAF5SIk"
+  google-site-verification: "r_ilpIOHAqgtXQwALiYlqGuTLMRBw93JfkYmQAF5SIk"
 };
 
 export default function RootLayout({ children }) {
