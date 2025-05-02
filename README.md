@@ -33,7 +33,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/Incodax/pratyush-portfolio.git
+    git clone https://github.com/pratyush0898/pratyush-portfolio.git
     ```
 
 2. **Navigate to the project directory:**
@@ -70,7 +70,7 @@ Contributions are welcome! If you have suggestions or improvements, please fork 
 
 ## License
 
-This project is licensed under the [Apache 2.0 License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
