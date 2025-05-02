@@ -13,8 +13,7 @@ export const metadata = {
     "Welcome to the portfolio website of Pratyush Kumar, a talented web developer from India. Explore his skills, projects, and contact him for collaborations.",
   keywords: "Pratyush, web developer, portfolio, India, projects, contact, collaborations",
   author: "Pratyush Kumar",
-  robots: "index, follow",
-  google-site-verification: "r_ilpIOHAqgtXQwALiYlqGuTLMRBw93JfkYmQAF5SIk"
+  robots: "index, follow"
 };
 
 export default function RootLayout({ children }) {
