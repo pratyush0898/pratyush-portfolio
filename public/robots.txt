@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://nvmpratyush.vercel.app
+
+# Sitemaps
+Sitemap: https://nvmpratyush.vercel.app/sitemap.xml
