@@ -1,7 +1,8 @@
 {
   "name": "pratyush-portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Pratyush Portfolio is a personal portfolio website built with Nextjs. It showcases my skills, projects, and achievements with a responsive design and interactive elements. Feel free to explore, provide feedback, or contribute!",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
