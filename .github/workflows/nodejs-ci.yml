@@ -1,21 +1,27 @@
-# File: .github/workflows/nodejs-ci.yml
-name: Node.js CI
+# File: .github/workflows/nextjs-ci.yml
+name: Next.js CI
 
 on:
   push:
     branches:
-      - master
+      - main
+    # Prevent workflow from re-triggering due to .next folder changes
+    paths-ignore:
+      - '.next/**'
 
 jobs:
   build-and-push:
+    # Prevent rerun if commit was made by the workflow itself
+    if: "!contains(github.event.head_commit.message, 'chore: add .next build artifacts')"
+
     runs-on: ubuntu-latest
 
     steps:
       - name: 'Checkout repo'
         uses: actions/checkout@v3
         with:
-          persist-credentials: true    # so the workflow can push back
-          fetch-depth: 0               # get full history for proper commits
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: 'Setup Node.js'
         uses: actions/setup-node@v3
@@ -28,11 +34,10 @@ jobs:
       - name: 'Build'
         run: npm run build
 
-      - name: 'Commit & push build'
+      - name: 'Commit & push .next folder'
         run: |
-          git config user.name '${{ github.actor }}'
-          git config user.email '${{ github.actor }}@users.noreply.github.com'
-          # only commit changed files in your build folder (adjust path if needed)
-          git add build/
-          git diff --quiet && echo 'Nothing to commit' || git commit -m 'chore: add build artifacts'
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .next/
+          git diff --quiet && echo 'Nothing to commit' || git commit -m 'chore: add .next build artifacts'
           git push
