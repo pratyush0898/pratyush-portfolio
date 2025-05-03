@@ -5,28 +5,34 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
       - name: 'Checkout repo'
         uses: actions/checkout@v3
+        with:
+          persist-credentials: true    # so the workflow can push back
+          fetch-depth: 0               # get full history for proper commits
 
       - name: 'Setup Node.js'
         uses: actions/setup-node@v3
         with:
           node-version: '18'
 
-      - name: 'npm install'
+      - name: 'Install dependencies'
         run: npm install
 
-      - name: 'npm build'
+      - name: 'Build'
         run: npm run build
 
-      - name: 'npm start'
-        run: npm start
+      - name: 'Commit & push build'
+        run: |
+          git config user.name '${{ github.actor }}'
+          git config user.email '${{ github.actor }}@users.noreply.github.com'
+          # only commit changed files in your build folder (adjust path if needed)
+          git add build/
+          git diff --quiet && echo 'Nothing to commit' || git commit -m 'chore: add build artifacts'
+          git push
