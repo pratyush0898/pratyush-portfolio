@@ -21,8 +21,6 @@ export default async function ReadArticle({ params }) {
                 <title>{`${article.title} | ${INFO.main.title}`}</title>
                 <meta name="description" content={article.description} />
                 <meta name="keywords" content={article.keywords.join(", ")} />
-                <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-                <script src="https://files.bpcontent.cloud/2024/11/13/13/20241113130426-YK6QCUIT.js"></script>
             </Head>
             <div className="content-wrapper">
                 <div className="read-article-logo-container">

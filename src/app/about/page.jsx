@@ -21,12 +21,8 @@ const About = () => {
 				<meta
 					name="keywords"
 					content={currentSEO.keywords.join(", ")}
-				/>
-				<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-				<script src="https://files.bpcontent.cloud/2024/11/13/13/20241113130426-YK6QCUIT.js"></script>
+					/>
 			</Head>
-
-+
 
 				<div className="content-wrapper">
 					<div className="about-logo-container">

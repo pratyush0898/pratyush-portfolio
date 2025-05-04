@@ -38,10 +38,6 @@ export default function RootLayout({ children }) {
       <Script src="https://cdn.jsdelivr.net/npm/kursor" strategy="afterInteractive" />
       <Script src="https://unpkg.com/kursor" strategy="afterInteractive" />
 
-      {/* Botpress Webchat */}
-      <Script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js" strategy="afterInteractive" />
-      <Script src="https://files.bpcontent.cloud/2024/11/13/13/20241113130426-YK6QCUIT.js" strategy="afterInteractive" />
-        
       <body className={`page-content`}>
         <KursorInit />
         <NavBar />
