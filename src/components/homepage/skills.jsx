@@ -14,8 +14,8 @@ const Skills = () => {
 				title="Skills"
 				body={
 					INFO.skills && INFO.skills.map((skills, idx) => (
-						<div className="skills">
-							<div className="skill-item" key={idx}>
+						<div className="skills" key={idx}>
+							<div className="skill-item">
 								<div className="skill-left">
 									<img src={skills.logo} alt={skills.title} className="skill-image" />
 									<div className="skill-title">{skills.title}</div>
