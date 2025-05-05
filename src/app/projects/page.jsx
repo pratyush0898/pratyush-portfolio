@@ -1,5 +1,5 @@
 import React from "react";
-import Head from "next/head";
+// Removed: import Head from "next/head";
 
 import Logo from "@/components/common/logo";
 import AllProjects from "@/components/projects/allProjects.jsx";
@@ -9,20 +9,16 @@ import SEO from "@/data/seo";
 
 import "@/styles/projects.css";
 
-const Projects = () => {
-	const currentSEO = SEO.find((item) => item.page === "projects");
+export const metadata = {
+	title: `Projects | ${INFO.main.title}`,
+	description: SEO.find((item) => item.page === "projects").description,
+	keywords: SEO.find((item) => item.page === "projects").keywords.join(", ")
+};
 
+const Projects = () => {
 	return (
 		<React.Fragment>
-			<Head>
-				<title>{`Projects | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				 />
-			</Head>	
-
+			{/* Removed <Head> */}
 			<div className="content-wrapper">
 				<div className="projects-logo-container">
 					<div className="projects-logo">
@@ -34,7 +30,6 @@ const Projects = () => {
 						Things I’ve made trying to put my dent in the
 						universe.
 					</div>
-
 					<div className="subtitle projects-subtitle">
 						I've worked on a variety of projects over the years
 						and I'm proud of the progress I've made. Many of
@@ -47,7 +42,6 @@ const Projects = () => {
 						learn and grow, and I'm always open to new ideas and
 						feedback.
 					</div>
-
 					<div className="projects-list">
 						<AllProjects />
 					</div>

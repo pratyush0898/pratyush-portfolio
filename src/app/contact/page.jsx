@@ -1,5 +1,5 @@
-import React, { use } from "react";
-import Head from "next/head";
+import React from "react";
+// Removed: import Head from "next/head";
 
 import Logo from "@/components/common/logo";
 import Socials from "@/components/about/socials";
@@ -9,34 +9,26 @@ import SEO from "@/data/seo";
 
 import "@/styles/contact.css";
 
+export const metadata = {
+	title: `Contact | ${INFO.main.title}`,
+	description: SEO.find((item) => item.page === "contact").description,
+	keywords: SEO.find((item) => item.page === "contact").keywords.join(", ")
+};
+
 const Contact = () => {
-
-
-	const currentSEO = SEO.find((item) => item.page === "contact");
-
 	return (
 		<React.Fragment>
-			<Head>
-				<title>{`Contact | ${INFO.main.title}`}</title>
-				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-					/>
-			</Head>
-
+			{/* Removed <Head> */}
 			<div className="content-wrapper">
 				<div className="contact-logo-container">
 					<div className="contact-logo">
 						<Logo width={46} />
 					</div>
 				</div>
-
 				<div className="contact-container">
 					<div className="title contact-title">
 						Let's Get in Touch: Ways to Connect with Me
 					</div>
-
 					<div className="subtitle contact-subtitle">
 						Thank you for your interest in getting in touch with
 						me. I welcome your feedback, questions, and
@@ -66,14 +58,11 @@ const Contact = () => {
 						to hearing from you!
 					</div>
 				</div>
-
 				{/* <div className="socials-container">
 						<div className="about-socials">
 							<Socials />
 						</div>
 					</div> */}
-
-
 				<div className="about-left-side">
 					<div className="about-socials contact-socials">
 						<Socials />

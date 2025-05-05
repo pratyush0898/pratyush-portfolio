@@ -1,6 +1,6 @@
 // articles.js
 import React from 'react'
-import { fetchAPI } from '@/api/api.js'
+import { fetchAPI } from '@/app/api/api.js'
 
 const API_URL = 'https://devto-api-x7rl.onrender.com/api/articles'
 
