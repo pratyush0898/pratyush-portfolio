@@ -71,7 +71,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/pratyush-kumar-751a1229b/) or [Email](mailto:pratyush.devloper@gmail.com).
+Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/pratyush-kumar-751a1229b/) or [Email](mailto:pratyush.devloper@proton.me).
 
 ## Acknowledgements
 
