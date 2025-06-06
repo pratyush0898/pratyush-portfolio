@@ -75,7 +75,7 @@ Commercial use, resale, or claiming this work as your own is prohibited.
 
 See the [LICENSE](LICENSE) file for full details.  
 For commercial or special license requests, contact:  
-[https://twitter.com/nvmpratyush](https://twitter.com/nvmpratyush) | [https://x.com/nvmpratyush](https://x.com/nvmpratyush)
+[pratyush.devloper@proton.me](mailto:pratyush.devloper@proton.me) | [https://x.com/nvmpratyush](https://x.com/nvmpratyush)
 
 ## Contact
 
