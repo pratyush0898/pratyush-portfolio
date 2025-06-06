@@ -8,8 +8,17 @@
 	background-color: #f1f1f1;
 }
 
+[data-theme="dark"] ::-webkit-scrollbar-track {
+	background-color: #101010;
+}
+
 ::-webkit-scrollbar-thumb {
 	background-color: #383636;
+	border-radius: 5px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+	background-color: #c7c9c9;
 	border-radius: 5px;
 }
 
@@ -17,8 +26,18 @@
 	background-color: rgb(0, 0, 0);
 }
 
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(255, 255, 255);
+}
+
 .page-content {
-	background-color: white;
+	background-color: var(--content-bg);
+	position: relative;
+	height: 100%;
+}
+
+[data-theme="dark"] .page-content {
+	background-color: var(--content-bg);
 	position: relative;
 	height: 100%;
 }
@@ -30,8 +49,8 @@
 	top: 0;
 	bottom: 0;
 	width: calc((100% - 1200px) / 2);
-	background-color: #fafafa;
-	border: 1px solid #f4f4f5;
+	background-color: var(--side-bg);
+	border: 1px solid var(--side-bg);
 }
 
 .page-content:before {
