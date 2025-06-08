@@ -6,6 +6,8 @@ body {
 	font-family: var(--primary-font);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
 	overflow-x: hidden;
 }
 
@@ -14,6 +16,10 @@ pre {
 	background-color: #263238;
 	margin: 1px;
 	padding: 7px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 	border-radius: 10px;
 	overflow-x: auto;
 	/* horizontal scroll if a line’s too long */
@@ -22,6 +28,10 @@ pre {
 pre code {
 	display: block;
 	/* fill the pre container */
+	-webkit-white-space: pre;
+	-moz-white-space: pre;
+	-ms-white-space: pre;
+	-o-white-space: pre;
 	white-space: pre;
 	/* preserve all newlines/spaces */
 	font-family: source-code-pro, Menlo, Monaco, Consolas,

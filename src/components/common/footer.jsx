@@ -4,6 +4,7 @@ import Link from "next/link";
 import "./styles/footer.css";
 
 const Footer = () => {
+	const currentYear = new Date().getFullYear();
 	return (
 		<React.Fragment>
 			<div className="footer">
@@ -29,7 +30,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2024 nvmPratyush.netlify.app All Rights Reserved.
+						© {currentYear} nvmPratyush.vercel.app All Rights Reserved.
 					</div>
 				</div>
 			</div>

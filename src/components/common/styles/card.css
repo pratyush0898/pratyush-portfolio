@@ -7,6 +7,9 @@
 	width: 100%;
 }
 
+[data-theme="dark"] .card {
+	outline: 2px solid #121212;
+}
 .card-container {
 	padding: 30px;
 	padding-bottom: 5px;

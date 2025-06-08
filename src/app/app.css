@@ -1,6 +1,10 @@
 @import "@/data/styles.css";
 
 ::-webkit-scrollbar {
+	-webkit-width: 10px;
+	-moz-width: 10px;
+	-ms-width: 10px;
+	-o-width: 10px;
 	width: 10px;
 }
 
@@ -31,12 +35,20 @@
 }
 
 .page-content {
+	-webkit-background-color: var(--content-bg);
+	-moz-background-color: var(--content-bg);
+	-ms-background-color: var(--content-bg);
+	-o-background-color: var(--content-bg);
 	background-color: var(--content-bg);
 	position: relative;
 	height: 100%;
 }
 
 [data-theme="dark"] .page-content {
+	-webkit-background-color: var(--content-bg);
+	-moz-background-color: var(--content-bg);
+	-ms-background-color: var(--content-bg);
+	-o-background-color: var(--content-bg);
 	background-color: var(--content-bg);
 	position: relative;
 	height: 100%;
@@ -117,7 +129,11 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	border-top: 2px solid var(--tertiary-color);
+	border-top: 2px solid #acacb4;
+}
+
+[data-theme="dark"] .page-footer::before {
+	border-top: 2px solid #4c4c4c;
 }
 
 .nolink {

@@ -5,14 +5,26 @@
 	border-radius: 20px;
 	opacity: 0.8;
 	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid transparent;
 }
 
 .project a {
 	text-decoration: none;
 }
 
+[data-theme="dark"] .project:hover {
+	background: var(--side-bg);
+	border: 1px solid rgb(255, 255, 255, 0.05);
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+
 .project:hover {
-	background: #fafafa;
+	background: var(--side-bg);
+	border: 1px solid rgb(0, 0, 0, 0.05);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }

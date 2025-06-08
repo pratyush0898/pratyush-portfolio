@@ -1,6 +1,10 @@
 @import "@/data/styles.css";
 
 .homepage-logo-container {
+	-webkit-display: flex;
+	-moz-display: flex;
+	-ms-display: flex;
+	-o-display: flex;
 	display: flex;
 	justify-content: left;
 	align-items: center;
@@ -42,9 +46,13 @@
 }
 
 .homepage-image-wrapper {
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
 	overflow: hidden;
 	border-radius: 10%;
-	transform: rotate(3deg);
 }
 
 .homepage-image-wrapper img {
