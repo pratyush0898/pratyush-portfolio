@@ -4,7 +4,7 @@ Welcome to Pratyush Portfolio! This is my personal portfolio site, showcasing my
 
 ## Site
 
-Check out the live site: [Pratyush Portfolio Demo](https://nvmpratyush.vercel.app/)
+Check out the live site: [Pratyush Portfolio Website](https://nvmpratyush.vercel.app/)
 
 ## Tech-stacks
 
@@ -67,11 +67,19 @@ Contributions are welcome! If you have suggestions or improvements, please fork 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+*NOTE: The license was changed from MIT to Pratyush Non-Commercial License (PNCL) on Friday, June 06, 2025 5:20 PM IST.*
+
+This project is licensed under the [**Pratyush Non-Commercial License (PNCL) v1.0**](LICENSE).  
+You may use, study, and fork this code for personal or educational purposes only.  
+Commercial use, resale, or claiming this work as your own is prohibited.  
+
+See the [LICENSE](LICENSE) file for full details.  
+For commercial or special license requests, contact:  
+[pratyush.devloper@proton.me](mailto:pratyush.devloper@proton.me) | [https://x.com/nvmpratyush](https://x.com/nvmpratyush)
 
 ## Contact
 
-Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/pratyush-kumar-751a1229b/) or [Email](mailto:pratyush.devloper@proton.me).
+Feel free to reach out to me via [X](https://x.com/nvmpratyush) or [Email](mailto:pratyush.devloper@proton.me).
 
 ## Acknowledgements
 
