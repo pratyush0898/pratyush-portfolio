@@ -1,4 +1,4 @@
-@import "../../../data/styles.css";
+@import "@/data/styles.css";
 
 .nav-container {
 	margin: 0;
@@ -24,6 +24,11 @@
 	background: #fff;
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 40px;
+}
+
+[data-theme="dark"] .nav-background {
+	background: #121212;
+	box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.1);
 }
 
 .nav-list {

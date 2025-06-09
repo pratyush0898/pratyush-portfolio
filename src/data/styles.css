@@ -1,14 +1,47 @@
-:root {
-	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
-	/* ---------------------- */
+	:root {
+		/* ------- colors ------- */
+		--content-bg: #ffffff;
+		--side-bg: #fafafa;
+		--primary-color: #27272a;
+		--secondary-color: #65656d;
+		--tertiary-color: #acacb4;
+		--quaternary-color: #e4e4e7;
+		--link-color: #14b8a6;
+		--shadow-color: rgba(0, 0, 0, 0.25);
+		/* ---------------------- */
 
-	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
-	/* --------------------- */
-}
+		/* ------- fonts ------- */
+		--primary-font: "Heebo", sans-serif;
+		--secondary-font: "Roboto", sans-serif;
+		/* --------------------- */
+
+		/* Vendor prefixes for colors */
+		-webkit-content-bg: #ffffff;
+		-moz-content-bg: #ffffff;
+		-ms-content-bg: #ffffff;
+		-o-content-bg: #ffffff;
+	}
+
+	[data-theme="dark"] {
+		/* ------- colors ------- */
+		--content-bg: #0d0d0d;
+		--side-bg: rgb(18, 18, 18);
+		--primary-color: #dfdfe2;
+		--secondary-color: #65656d;
+		--tertiary-color: #f0f8ff;
+		--quaternary-color: #1b1b18;
+		--link-color: #17CFB9;
+		--shadow-color: rgba(255, 255, 255, 0.1);
+		/* ---------------------- */
+
+		/* ------- fonts ------- */
+		--primary-font: "Heebo", sans-serif;
+		--secondary-font: "Roboto", sans-serif;
+		/* --------------------- */
+
+		/* Vendor prefixes for colors */
+		-webkit-content-bg: #0d0d0d;
+		-moz-content-bg: #0d0d0d;
+		-ms-content-bg: #0d0d0d;
+		-o-content-bg: #0d0d0d;
+	}

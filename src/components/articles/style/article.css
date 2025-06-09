@@ -1,4 +1,4 @@
-@import "../../../data/styles.css";
+@import "@/data/styles.css";
 
 .article {
 	display: flex;
@@ -20,6 +20,10 @@
 	border-radius: 20px;
 	opacity: 0.8;
 	padding: 30px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid transparent;
 }
 
 .article-right-side:hover {
@@ -28,14 +32,25 @@
 	transition: background-color 0.3s ease-in-out;
 }
 
+[data-theme="dark"] .article-right-side:hover {
+	background: var(--side-bg);
+	border: 1px solid rgb(255, 255, 255, 0.05);
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
+
 .article-date {
 	padding-top: 30px;
 	font-size: 15px;
-	color: var(--tertiary-color);
+	color: #acacb4;
+}
+
+[data-theme="dark"] .article-date {
+	color: #6b6b6b;
 }
 
 .article-title {
-	color: #000000;
+	color: var(--primary-color);
 	font-size: 16px;
 	font-weight: 600;
 }

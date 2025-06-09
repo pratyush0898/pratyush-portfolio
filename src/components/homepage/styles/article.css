@@ -1,4 +1,4 @@
-@import "../../../data/styles.css";
+@import "@/data/styles.css";
 
 .homepage-article {
 	width: 90%;
@@ -8,7 +8,7 @@
 }
 
 .homepage-article:hover {
-	background: #fafafa;
+	background: var(--side-bg);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }

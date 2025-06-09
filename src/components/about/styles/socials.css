@@ -1,4 +1,4 @@
-@import "../../../data/styles.css";
+@import "@/data/styles.css";
 
 .social,
 .email-wrapper {
@@ -16,12 +16,44 @@
 	color: var(--secondary-color);
 }
 
+.social:hover .social-icon {
+	color: var(--link-color);
+}
+
+[data-theme="dark"] .social:hover .social-icon {
+	color: #999999;
+}
+
+.email:hover .social-icon {
+color: var(--link-color);
+}
+
+[data-theme="dark"] .email:hover .social-icon {
+	color: #999999;
+}
+
 .social-text {
 	color: var(--secondary-color);
 	padding-left: 30px;
-	margin-top: -20px;
+	margin-top: -20px;	
 	font-weight: 600;
 	font-size: 14px;
+}
+
+.social:hover .social-text {
+	color: var(--link-color);
+}
+
+[data-theme="dark"] .social:hover .social-text {
+	color: #999999;
+}
+
+.email:hover .social-text {
+	color: var(--link-color);
+}
+
+[data-theme="dark"] .email:hover .social-text {
+	color: #999999;
 }
 
 .email::before {
@@ -30,6 +62,10 @@
 	padding-top: 20px;
 	border-top: 3px solid #f4f4f5;
 	margin-top: 20px;
+}
+
+[data-theme="dark"] .email::before {
+	border-top: 3px solid rgb(48, 48, 48);
 }
 
 .email-wrapper {
