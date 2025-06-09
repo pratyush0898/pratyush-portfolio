@@ -25,6 +25,12 @@ pre {
 	/* horizontal scroll if a line’s too long */
 }
 
+
+[data-theme="dark"] pre {
+	background-color: #263238;
+	border: 1px solid #37474f;
+}	
+
 pre code {
 	display: block;
 	/* fill the pre container */

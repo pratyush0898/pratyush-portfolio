@@ -1,4 +1,4 @@
-@import "../../../data/styles.css";
+@import "@/data/styles.css";
 
 .footer {
 	display: flex;

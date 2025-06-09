@@ -29,7 +29,7 @@ const Contact = () => {
 					<div className="title contact-title">
 						Let's Get in Touch: Ways to Connect with Me
 					</div>
-					<div className="subtitle contact-subtitle">
+					<div className="contact-subtitle">
 						Thank you for your interest in getting in touch with
 						me. I welcome your feedback, questions, and
 						suggestions. If you have a specific question or
