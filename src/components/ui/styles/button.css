@@ -1,0 +1,59 @@
+/* From Uiverse.io by alexroumi - MODIFIED: Scaled Down, Slightly smaller button with same ratio */
+.button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 14px;
+  -webkit-box-shadow: 3.2px 6.4px 15.2px -2.4px rgba(0, 0, 0, 0.27);
+  box-shadow: 3.2px 6.4px 15.2px -2.4px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  margin: 0 10px 10px 10px;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 0px;
+  background: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 3.2px 6.4px 15.2px -2.4px rgba(0, 0, 0, 0.27);
+  box-shadow: 3.2px 6.4px 15.2px -2.4px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.button:hover {
+  color: #e8e8e8;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+[data-theme="dark"] .button {
+  background-color: #dddddd;
+  color: #212121;
+    -webkit-box-shadow: 3.2px 6.4px 15.2px -2.4px rgba(255, 255, 255, 0.27);
+  box-shadow: 3.2px 6.4px 15.2px -2.4px rgba(255, 255, 255, 0.09);
+}
+
+[data-theme="dark"] .button::before:hover {
+  background-color: #242424;  
+}
+
+.button:hover {
+  color: #e8e8e8;
+}

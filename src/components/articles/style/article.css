@@ -27,8 +27,9 @@
 }
 
 .article-right-side:hover {
-	background: #fafafa;
+	background: var(--side-bg);
 	opacity: 1;
+	border: 1px solid rgb(0, 0, 0, 0.05);
 	transition: background-color 0.3s ease-in-out;
 }
 

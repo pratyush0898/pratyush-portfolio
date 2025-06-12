@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";

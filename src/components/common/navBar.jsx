@@ -34,6 +34,9 @@ const NavBar = () => {
 						<li className={getActive("/contact")}>
 							<Link href="/contact">Contact</Link>
 						</li>
+						<li className={getActive("/support")}>
+							<Link href="/support">Support me</Link>
+						</li>
 					</ul>
 				</div>
 			</nav>

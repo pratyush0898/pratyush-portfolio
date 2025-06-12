@@ -1,0 +1,43 @@
+/* From Uiverse.io by alexroumi - MODIFIED: Scaled Down, Slightly smaller selbutton with same ratio */
+.selbutton {
+  padding: 8px 8px;
+  outline: 2px solid #cccccc;
+  border-radius: 5px;
+  color: #212121;
+  z-index: 1;
+  width: fit-content;
+  background: transparent;
+  position: relative;
+  font-weight: 1000;
+  font-size: 12px;
+  transition: all 250ms;
+  overflow: hidden;
+  margin: 6px 6px;
+  transition: all 250ms;
+}
+
+.selbutton:hover{
+    outline: 2px solid #999999;
+    cursor: pointer !important;
+}
+
+.selbutton-active {
+    outline: 2px solid #2259ff;
+}
+
+[data-theme="dark"] .selbutton {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .selbutton {
+    outline: 2px solid #999999;
+    color: #acacb4;
+}
+
+[ data-theme="dark"] .selbutton:hover {
+    outline: 2px solid #999999;
+}
+
+[ data-theme="dark"] .selbutton-active {
+    outline: 2px solid #3C6CFF;
+}

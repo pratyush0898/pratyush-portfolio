@@ -11,6 +11,10 @@ body {
 	overflow-x: hidden;
 }
 
+/* [data-theme="dark"] a {
+	color: #4da6ff;
+} */
+
 /* 1) Style block code (triple-backticks → <pre><code>…</code></pre>) */
 pre {
 	background-color: #263238;
