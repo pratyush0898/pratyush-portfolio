@@ -7,9 +7,20 @@ import INFO from "@/data/user";
 import "@/styles/not-found.css";
 
 export const metadata = {
-  title: `404 | ${INFO.main.title}`,
+  title: `404 | PAGE NOT FOUND | ${INFO.main.title}`,
   description: "Page not found. The requested URL was not found on this server.",
-  robots: "noindex, nofollow"
+  robots: "noindex, nofollow",
+  openGraph: {
+    title: `404 | ${INFO.main.title}`,
+    description: "Oops! This page doesn't exist. Let's get you back home.",
+    images: [{ url: "/logo.png", width: 512, height: 512 }],
+  },
+  twitter: {
+    card: "summary",
+    title: `PAGE NOT FOUND | 404 | ${INFO.main.title}`,
+    description: "Lost in space. The page you're looking for isn't here.",
+    images: ["/logo.png"]
+  }
 };
 
 const Notfound = () => {

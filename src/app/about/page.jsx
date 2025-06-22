@@ -10,10 +10,36 @@ import SEO from "@/data/seo";
 import "@/styles/about.css";
 
 export const metadata = {
-	title: `About | ${INFO.main.title}`,
-	description: SEO.find((item) => item.page === "about").description,
-	keywords: SEO.find((item) => item.page === "about").keywords.join(", ")
+  title: `About | ${INFO.main.title}`,
+  description: SEO.find((item) => item.page === "about").description,
+  keywords: SEO.find((item) => item.page === "about").keywords.join(", "),
+
+  openGraph: {
+    title: `About | ${INFO.main.title}`,
+    description: SEO.find((item) => item.page === "about").description,
+    url: "https://nvmpratyush.vercel.app/about",
+    siteName: "Pratyush Kumar",
+    images: [
+      {
+        url: "/about.jpg",
+        width: 1200,
+        height: 630,
+        alt: "About Pratyush Kumar",
+      },
+    ],
+    locale: "en_IN",
+    type: "profile",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: `About | ${INFO.main.title}`,
+    description: SEO.find((item) => item.page === "about").description,
+    images: ["/about.jpg"],
+    creator: "@nvmpratyush",
+  },
 };
+
 
 const About = () => {
 	return (

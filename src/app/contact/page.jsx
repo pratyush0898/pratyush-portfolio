@@ -10,9 +10,34 @@ import SEO from "@/data/seo";
 import "@/styles/contact.css";
 
 export const metadata = {
-	title: `Contact | ${INFO.main.title}`,
-	description: SEO.find((item) => item.page === "contact").description,
-	keywords: SEO.find((item) => item.page === "contact").keywords.join(", ")
+  title: `Contact | ${INFO.main.title}`,
+  description: SEO.find((item) => item.page === "contact").description,
+  keywords: SEO.find((item) => item.page === "contact").keywords.join(", "),
+
+  openGraph: {
+    title: `Contact | ${INFO.main.title}`,
+    description: SEO.find((item) => item.page === "contact").description,
+    url: "https://nvmpratyush.vercel.app/contact",
+    siteName: "Pratyush Kumar",
+    images: [
+      {
+        url: "/logo.png", // Fallback image
+        width: 512,
+        height: 512,
+        alt: "Pratyush Kumar logo",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact | ${INFO.main.title}`,
+    description: SEO.find((item) => item.page === "contact").description,
+    images: ["/logo.png"], // Fallback image
+    creator: "@nvmpratyush",
+  },
 };
 
 const Contact = () => {

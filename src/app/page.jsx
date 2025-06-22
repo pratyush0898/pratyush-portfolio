@@ -15,9 +15,35 @@ import Socials from "@/components/homepage/socials";
 import Skills from "@/components/homepage/skills";
 
 export const metadata = {
-	title: INFO.main.title,
-	description: SEO.find((item) => item.page === "home").description,
-	keywords: SEO.find((item) => item.page === "home").keywords.join(", ")
+  title: INFO.main.title,
+  description: SEO.find((item) => item.page === "home").description,
+  keywords: SEO.find((item) => item.page === "home")
+    .keywords.join(", "),
+
+  openGraph: {
+    title: INFO.main.title,
+    description: SEO.find((item) => item.page === "home").description,
+    url: "https://nvmpratyush.vercel.app",
+    siteName: "Pratyush Kumar",
+    images: [
+      {
+        url: "/homepage.png",
+        width: 1400,
+        height: 1400,
+        alt: "Pratyush Kumar Portfolio Home",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: INFO.main.title,
+    description: SEO.find((item) => item.page === "home").description,
+    images: ["/homepage.png"],
+    creator: "@nvmpratyush",
+  },
 };
 
 const Homepage = () => {

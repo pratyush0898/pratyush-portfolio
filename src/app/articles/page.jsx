@@ -11,9 +11,34 @@ import myArticles from "@/data/articles";
 import "@/styles/articles.css";
 
 export const metadata = {
-	title: `Articles | ${INFO.main.title}`,
-	description: SEO.find((item) => item.page === "articles").description,
-	keywords: SEO.find((item) => item.page === "articles").keywords.join(", ")
+  title: `Articles | ${INFO.main.title}`,
+  description: SEO.find((item) => item.page === "articles").description,
+  keywords: SEO.find((item) => item.page === "articles").keywords.join(", "),
+
+  openGraph: {
+    title: `Articles | ${INFO.main.title}`,
+    description: SEO.find((item) => item.page === "articles").description,
+    url: "https://nvmpratyush.vercel.app/articles",
+    siteName: "Pratyush Kumar",
+    images: [
+      {
+        url: "/homepage.png",
+        width: 1400,
+        height: 1400,
+        alt: "Articles by Pratyush Kumar",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: `Articles | ${INFO.main.title}`,
+    description: SEO.find((item) => item.page === "articles").description,
+    images: ["/homepage.png"],
+    creator: "@nvmpratyush",
+  },
 };
 
 const Articles = () => {

@@ -10,9 +10,34 @@ import SEO from "@/data/seo";
 import "@/styles/projects.css";
 
 export const metadata = {
-	title: `Projects | ${INFO.main.title}`,
-	description: SEO.find((item) => item.page === "projects").description,
-	keywords: SEO.find((item) => item.page === "projects").keywords.join(", ")
+  title: `Projects | ${INFO.main.title}`,
+  description: SEO.find((item) => item.page === "projects").description,
+  keywords: SEO.find((item) => item.page === "projects").keywords.join(", "),
+
+  openGraph: {
+    title: `Projects | ${INFO.main.title}`,
+    description: SEO.find((item) => item.page === "projects").description,
+    url: "https://nvmpratyush.vercel.app/projects",
+    siteName: "Pratyush Kumar",
+    images: [
+      {
+        url: "/homepage.png", // fallback Open Graph image
+        width: 1400,
+        height: 1400,
+        alt: "Pratyush Kumar Projects",
+      },
+    ],
+    locale: "en_IN",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: `Projects | ${INFO.main.title}`,
+    description: SEO.find((item) => item.page === "projects").description,
+    images: ["/homepage.png"],
+    creator: "@nvmpratyush",
+  },
 };
 
 const Projects = () => {
