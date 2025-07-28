@@ -1,3 +1,5 @@
+import React from "react";
+
 const INFO = {
   main: {
     title: "Pratyush kumar",
@@ -10,210 +12,209 @@ const INFO = {
     {
       title: "HTML5",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "CSS3",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "JavaScript ES6+",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "Typescript",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "React.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "Next.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Svelte",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Angular",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-      level: "Beginner"
+      level: "Beginner",
     },
     {
       title: "Vue",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
-      level: "Beginner"
+      level: "Beginner",
     },
     {
       title: "Node.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "NPM",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Python",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "TailwindCSS v4+",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Bootstrap",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Figma",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Flutter",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Git",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "GitHub",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "MongoDB",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "MYSQL",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Express.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Sass",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Material UI",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Vercel",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Netlify",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "Firebase",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Google Cloud",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Bash",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Powershell",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Linux",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "Ubuntu",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg",
-      level: "Advanced"
+      level: "Advanced",
     },
     {
       title: "Debian",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Arch Linux",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Docker",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "PostgreSQL",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "WordPress",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "VS Code",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
-      level: "Expert"
+      level: "Expert",
     },
     {
       title: "Redux",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Redis",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
-      level: "Intermediate"
+      level: "Intermediate",
     },
     {
       title: "Amazon Web Services",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-      level: "Beginner"
+      level: "Beginner",
     },
     {
       title: "Webpack",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg",
-      level: "Intermediate"
-    }
+      level: "Intermediate",
+    },
   ],
-
 
   socials: {
     twitter: "https://twitter.com/nvmPratyush",
@@ -237,7 +238,8 @@ const INFO = {
   },
 
   articles: {
-    title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+    title:
+      "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
     description:
       "Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
   },
@@ -249,6 +251,14 @@ const INFO = {
   },
 
   projects: [
+    {
+      title: "flollama",
+      description:
+        "Flollama is an open-source AI chatbot built with Ollama and Next.js. Experience private, fast, and stylish AI chats powered by LLaMA 3.2.",
+      logo: "https://flollama.in/favicon.svg",
+      linkText: "View Project",
+      link: "https://flollama.in/",
+    },
     {
       title: "Personal website",
       description:
