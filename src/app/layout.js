@@ -1,6 +1,7 @@
 import NavBar from "@/components/common/navBar.jsx";
 import Footer from "@/components/common/footer.jsx";
 import ThemeToggle from "@/components/common/ThemeToggle.jsx";
+import Script from "next/script";
 import "@/app/app.css";
 import "@/index.css";
 import "@/data/styles.css";
@@ -71,6 +72,19 @@ export const metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Pratyush Kumar",
+  jobTitle: "Full Stack Developer",
+  url: "https://nvmpratyush.vercel.app",
+  sameAs: [
+    "https://github.com/pratyush0898",
+    "https://linkedin.com/in/pratyush-kumar-751a1229b",
+    "https://instagram.com/pratyush0898",
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -81,6 +95,12 @@ export default function RootLayout({ children }) {
         <div className="page-footer">
           <Footer />
         </div>
+        <Script
+          id="ld-json"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          strategy="afterInteractive" // or "lazyOnload" depending on your preference
+        />
       </body>
     </html>
   );
