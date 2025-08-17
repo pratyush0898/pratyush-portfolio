@@ -1,66 +1,54 @@
-import React from "react";
-// Removed: import Head from "next/head";
+"use client";
+
+import React, { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 import Logo from "@/components/common/logo.jsx";
-import INFO from "@/data/user.js";
-import { fetchFormattedArticles } from "@/app/api/api.js";
-import "@/styles/readArticle.css";
 import BackButton from "@/components/common/BackButton.jsx";
+import "@/styles/readArticle.css";
+import { fetchFormattedArticles } from "@/lib/fetchFormattedArticles";
 
-export async function generateMetadata({ params }) {
-    const myArticles = await fetchFormattedArticles();
-    const slug = params.id;
-    const article = myArticles[parseInt(slug) - 1];
-    if (!article) {
-        return {
-            title: `Article Not Found | ${INFO.main.title}`,
-            description: "Article not found or failed to load.",
-            robots: "noindex, nofollow"
-        };
-    }
-    return {
-        title: `${article.title} | ${INFO.main.title}`,
-        description: article.description,
-        keywords: Array.isArray(article.keywords) ? article.keywords.join(", ") : undefined
+export default function ReadArticle() {
+  const { id } = useParams();
+  const [article, setArticle] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadArticle = async () => {
+      setLoading(true);
+      const articles = await fetchFormattedArticles();
+      if (articles && articles.length > 0) {
+        const found = articles[parseInt(id) - 1];
+        setArticle(found || null);
+      }
+      setLoading(false);
     };
-}
+    loadArticle();
+  }, [id]);
 
-export default async function ReadArticle({ params }) {
-    const myArticles = await fetchFormattedArticles();
-    const slug = params.id;
-    const article = myArticles[parseInt(slug) - 1];
+  if (loading) return <div>Loading...</div>;
+  if (!article) return <div>Article not found or failed to load.</div>;
 
-    if (!article) {
-        return <div>Article not found or failed to load.</div>;
-    }
-
-    return (
-        <React.Fragment>
-            {/* Removed <Head> */}
-            <div className="content-wrapper">
-                <div className="read-article-logo-container">
-                    <div className="read-article-logo">
-                        <Logo width={46} />
-                    </div>
-                </div>
-                <div className="read-article-container">
-                    <div className="read-article-back">
-                        <BackButton className="read-article-back-button" />
-                    </div>
-                    <div className="read-article-wrapper">
-                        <div className="read-article-date-container">
-                            <div className="read-article-date">
-                                {article.date}
-                            </div>
-                        </div>
-                        <div className="title read-article-title">
-                            {article.title}
-                        </div>
-                        <div className="read-article-body">
-                            <div dangerouslySetInnerHTML={{ __html: article.bodyHtml }} />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </React.Fragment>
-    );
+  return (
+    <div className="content-wrapper">
+      <div className="read-article-logo-container">
+        <div className="read-article-logo">
+          <Logo width={46} />
+        </div>
+      </div>
+      <div className="read-article-container">
+        <div className="read-article-back">
+          <BackButton className="read-article-back-button" />
+        </div>
+        <div className="read-article-wrapper">
+          <div className="read-article-date-container">
+            <div className="read-article-date">{article.date}</div>
+          </div>
+          <div className="title read-article-title">{article.title}</div>
+          <div className="read-article-body">
+            <div dangerouslySetInnerHTML={{ __html: article.bodyHtml }} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

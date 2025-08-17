@@ -1,8 +1,8 @@
 // articles.js
 import React from 'react'
-import { fetchAPI } from '@/app/api/api.js'
+import { fetchAPI } from '@/lib/fetchAPI'
 
-const API_URL = 'https://devto-api-x7rl.onrender.com/api/articles'
+const API_URL = 'http://localhost:3000/api/articles';
 
 /**
  * Fetch your pre–formatted articles from your own API,
@@ -28,4 +28,4 @@ const myArticles = rawArticles.map(a => {
   }
 })
 
-export default myArticles
+export default myArticles;
