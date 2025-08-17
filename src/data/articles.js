@@ -2,7 +2,7 @@
 import React from 'react'
 import { fetchAPI } from '@/lib/fetchAPI'
 
-const API_URL = 'http://localhost:3000/api/articles';
+const API_URL = 'http://nvmpratyush.vercel.apps/api/articles';
 
 /**
  * Fetch your pre–formatted articles from your own API,

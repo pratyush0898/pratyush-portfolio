@@ -10,7 +10,7 @@ export default function HomepageArticles() {
   useEffect(() => {
     async function loadArticles() {
       try {
-        const res = await fetch("/api/articles", { cache: "no-store" });
+        const res = await fetch("https://nvmpratyush.vercel.app/api/articles", { cache: "no-store" });
         if (!res.ok) throw new Error("Failed to fetch articles");
         const data = await res.json();
         setArticles(data);
