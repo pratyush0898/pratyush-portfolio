@@ -1,15 +1,9 @@
+"use client";
 import React, { Suspense } from "react";
 import Logo from "@/components/common/logo";
 import INFO from "@/data/user";
-import SEO from "@/data/seo";
 import "@/styles/articles.css";
 import ArticlesList from "@/components/articles/ArticlesList";
-
-export const metadata = {
-  title: `Articles | ${INFO.main.title}`,
-  description: SEO.find((item) => item.page === "articles").description,
-  keywords: SEO.find((item) => item.page === "articles").keywords.join(", "),
-};
 
 const Articles = () => {
   return (
@@ -25,15 +19,7 @@ const Articles = () => {
           {INFO.articles.description}
         </div>
         <div className="articles-container">
-          <Suspense
-            fallback={
-              <div className="homepage-articles">
-                <p className="subtitle homepage-subtitle">Loading articles…</p>
-              </div>
-            }
-          >
-            <ArticlesList />
-          </Suspense>
+          <ArticlesList />
         </div>
       </div>
     </div>

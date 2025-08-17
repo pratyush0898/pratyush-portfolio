@@ -1,23 +1,44 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Article from "@/components/articles/article";
-import myArticles from "@/data/articles";
 
 export default function ArticlesList() {
   const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setArticles(myArticles);
+    async function loadArticles() {
+      try {
+        const res = await fetch("/api/articles", { cache: "no-store" });
+        if (!res.ok) throw new Error("Failed to fetch articles");
+        const data = await res.json();
+        setArticles(data);
+      } catch (err) {
+        console.error("Error loading articles:", err);
+        setArticles([]);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadArticles();
   }, []);
+
+  if (loading) {
+    return <div>Loading articles…</div>;
+  }
+
+  if (!articles || articles.length === 0) {
+    return <div>No articles available right now.</div>;
+  }
 
   return (
     <div className="articles-wrapper">
       {articles.map((article, index) => (
         <div className="articles-article" key={index}>
           <Article
-            date={article().date}
-            title={article().title}
-            description={article().description}
+            date={article.date}
+            title={article.title}
+            description={article.description}
             link={`/article/${index + 1}`}
           />
         </div>
