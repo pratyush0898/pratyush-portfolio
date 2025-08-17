@@ -23,14 +23,6 @@ export default function ArticlesList() {
     loadArticles();
   }, []);
 
-  if (loading) {
-    return <div>Loading articles…</div>;
-  }
-
-  if (!articles || articles.length === 0) {
-    return <div>No articles available right now.</div>;
-  }
-
   return (
     <div className="articles-wrapper">
       {articles.map((article, index) => (

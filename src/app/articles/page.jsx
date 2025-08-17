@@ -19,7 +19,16 @@ const Articles = () => {
           {INFO.articles.description}
         </div>
         <div className="articles-container">
-          <ArticlesList />
+          <Suspense
+            fallback={
+              <div className="articles-wrapper">
+                <noscript>Articles API needs JavaScript to render</noscript>
+                <p className="subtitle homepage-subtitle">Loading articles…</p>
+              </div>
+            }
+          >
+            <ArticlesList />
+          </Suspense>
         </div>
       </div>
     </div>

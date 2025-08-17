@@ -78,6 +78,7 @@ const Homepage = () => {
             <Suspense
               fallback={
                 <div className="homepage-articles">
+                  <noscript>Articles API needs JavaScript to render</noscript>
                   <p className="subtitle homepage-subtitle">
                     Loading articles…
                   </p>
