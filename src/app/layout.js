@@ -2,6 +2,7 @@ import ThemeToggle from "@/components/common/ThemeToggle.jsx";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import NavBar from "@/components/common/navBar.jsx";
 import Footer from "@/components/common/footer.jsx";
+import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import INFO from "@/data/user";
 import "@/data/styles.css";
