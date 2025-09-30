@@ -72,7 +72,7 @@
 
 @media (max-width: 1024px) {
 	.about-logo {
-		z-index: 100;
+		z-index: 4;
 	}
 
 	.about-main {

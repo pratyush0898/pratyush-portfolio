@@ -14,7 +14,7 @@
     justify-content: center;
     font-size: 1.2rem;
     transition: all 0.3s ease;
-    z-index: 1000;
+    z-index: 6;
     box-shadow: 0 2px 8px var(--shadow-color);
 }
 

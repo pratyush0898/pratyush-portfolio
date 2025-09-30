@@ -8,7 +8,7 @@
 }
 
 .homepage-article:hover {
-	background: var(--side-bg);
+	background: var(--quinary-color);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }

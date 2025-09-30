@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://nvmpratyush.vercel.app
-
-# Sitemaps
-Sitemap: https://nvmpratyush.vercel.app/sitemap.xml

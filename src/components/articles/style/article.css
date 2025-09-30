@@ -27,13 +27,14 @@
 }
 
 .article-right-side:hover {
-	background: #fafafa;
+	background: var(--quinary-color);
+	border: 1px solid rgb(0, 0, 0, 0.05);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
 
 [data-theme="dark"] .article-right-side:hover {
-	background: var(--side-bg);
+	background: var(--quinary-color);
 	border: 1px solid rgb(255, 255, 255, 0.05);
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;

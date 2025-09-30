@@ -46,7 +46,6 @@ export const metadata = {
 const Homepage = () => {
   return (
     <React.Fragment>
-      <div className="content-wrapper">
         <div className="homepage-logo-container">
           <LogoWithScroll />
         </div>
@@ -97,7 +96,6 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-      </div>
     </React.Fragment>
   );
 };

@@ -41,38 +41,36 @@ export const metadata = {
 const About = () => {
   return (
     <React.Fragment>
-      <div className="content-wrapper">
-        <div className="about-logo-container">
-          <div className="about-logo">
-            <Logo width={46} />
+      <div className="about-logo-container">
+        <div className="about-logo">
+          <Logo width={46} />
+        </div>
+      </div>
+      <div className="about-container">
+        <div className="about-main">
+          <div className="about-right-side">
+            <div className="title about-title">{INFO.about.title}</div>
+            <div className="subtitle about-subtitle">
+              {INFO.about.description}
+            </div>
+          </div>
+          <div className="about-left-side">
+            <div className="about-image-container">
+              <div className="about-image-wrapper">
+                <img
+                  src="../about.jpg"
+                  alt="Pratyush Kumar"
+                  className="about-image"
+                />
+              </div>
+            </div>
+            <div className="about-socials">
+              <Socials />
+            </div>
           </div>
         </div>
-        <div className="about-container">
-          <div className="about-main">
-            <div className="about-right-side">
-              <div className="title about-title">{INFO.about.title}</div>
-              <div className="subtitle about-subtitle">
-                {INFO.about.description}
-              </div>
-            </div>
-            <div className="about-left-side">
-              <div className="about-image-container">
-                <div className="about-image-wrapper">
-                  <img
-                    src="../about.jpg"
-                    alt="Pratyush Kumar"
-                    className="about-image"
-                  />
-                </div>
-              </div>
-              <div className="about-socials">
-                <Socials />
-              </div>
-            </div>
-          </div>
-          <div className="about-socials-mobile">
-            <Socials />
-          </div>
+        <div className="about-socials-mobile">
+          <Socials />
         </div>
       </div>
     </React.Fragment>

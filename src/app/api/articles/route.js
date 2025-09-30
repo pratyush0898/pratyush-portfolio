@@ -6,7 +6,7 @@ const DEV_TO_API_URL = 'https://dev.to/api/articles';
 // In-memory cache for articles (5 minutes TTL)
 let articlesCache = null;
 let cacheTimestamp = null;
-const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes in milliseconds
+const CACHE_DURATION = 40 * 60 * 1000; // 40 minutes in milliseconds
 
 // Utility function to fetch from API
 const fetchAPI = async (url) => {

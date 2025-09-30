@@ -2,10 +2,26 @@ import React from "react";
 
 const INFO = {
   main: {
-    title: "Pratyush kumar",
+    title: "Pratyush kumar: Web Developer",
     name: "Pratyush Kumar.",
+    occation: "Web Developer",
+    description:
+      "Welcome to the portfolio website of Pratyush Kumar, a talented web developer from India. Explore his skills, projects, and contact him for collaborations.",
+    keywords:
+      "Pratyush, web developer, portfolio, India, projects, contact, collaborations",
     email: "pratyush.devloper@gmail.com",
+    creator: "@nvmpratyush",
+    url: "https://nvmpratyush.vercel.app",
     logo: "../logo.png",
+  },
+
+  other: {
+    "geo.region": "IN-CT",
+    "geo.placename": "Durg, Chhattisgarh",
+    "geo.position": "21.1905;81.2849",
+    ICBM: "21.1905, 81.2849",
+    "revisit-after": "7 days",
+    language: "English",
   },
 
   skills: [
@@ -225,6 +241,19 @@ const INFO = {
     facebook: "https://www.facebook.com/profile.php?id=61556676064730",
   },
 
+  jsonLd: {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Pratyush Kumar",
+    jobTitle: "Full Stack Developer",
+    url: "https://nvmpratyush.vercel.app",
+    sameAs: [
+      "https://github.com/pratyush0898",
+      "https://linkedin.com/in/pratyush-kumar-751a1229b",
+      "https://instagram.com/pratyush0898",
+    ],
+  },
+
   homepage: {
     title: "Full-stack web, and Astrology enthusiast.",
     description:
@@ -247,7 +276,7 @@ const INFO = {
   support: {
     title: "Your Support Fules  My Passion",
     description:
-      "Creating content takes passion and dedication, and your support makes it all worthwhile. If you appreciate my work, consider supporting me with a small token of $1. It helps me keep going and create even more amazing projects for you!",
+      "Creating content takes passion and dedication, and your support makes it all worthwhile. If you appreciate my work, consider supporting me with a small token of ₹10. It helps me keep going and create even more amazing projects for you!",
   },
 
   projects: [

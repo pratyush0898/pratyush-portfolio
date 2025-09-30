@@ -13,7 +13,7 @@
 	align-items: center;
 	position: fixed;
 	top: 3vh;
-	z-index: 999;
+	z-index: 4;
 }
 
 .nav-background {

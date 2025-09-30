@@ -42,7 +42,7 @@ export const metadata = {
 const Projects = () => {
   return (
     <React.Fragment>
-      <div className="content-wrapper">
+      <>
         <div className="projects-logo-container">
           <div className="projects-logo">
             <Logo width={46} />
@@ -65,7 +65,7 @@ const Projects = () => {
             <AllProjects />
           </div>
         </div>
-      </div>
+      </>
     </React.Fragment>
   );
 };

@@ -12,6 +12,7 @@
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	top: 4vh;
 }
+
 [data-theme="dark"] .contact-container a {
 	color: #4da6ff;
 }

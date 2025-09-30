@@ -29,7 +29,7 @@ export default function ReadArticle() {
   if (!article) return <div>Article not found or failed to load.</div>;
 
   return (
-    <div className="content-wrapper">
+    <>
       <div className="read-article-logo-container">
         <div className="read-article-logo">
           <Logo width={46} />
@@ -49,6 +49,6 @@ export default function ReadArticle() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

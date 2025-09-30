@@ -7,7 +7,7 @@ import ArticlesList from "@/components/articles/ArticlesList";
 
 const Articles = () => {
   return (
-    <div className="content-wrapper">
+    <>
       <div className="articles-logo-container">
         <div className="articles-logo">
           <Logo width={46} />
@@ -31,7 +31,7 @@ const Articles = () => {
           </Suspense>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
