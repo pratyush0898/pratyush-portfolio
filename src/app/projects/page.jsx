@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "Pratyush Kumar",
     images: [
       {
-        url: "/homepage.png",
+        url: "/homepage.webp",
         width: 1400,
         height: 1400,
         alt: "Pratyush Kumar Projects",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: `Projects | ${INFO.main.title}`,
     description: SEO.find((item) => item.page === "projects").description,
-    images: ["/homepage.png"],
+    images: ["/homepage.webp"],
     creator: "@nvmpratyush",
   },
 };

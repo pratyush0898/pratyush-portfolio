@@ -15,7 +15,7 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
-								src="./fiverr.png"
+								src="./fiverr.webp"
 								alt="twitter"
 								className="work-image"
 							/>

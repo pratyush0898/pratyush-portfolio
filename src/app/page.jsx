@@ -24,7 +24,7 @@ export const metadata = {
     siteName: "Pratyush Kumar",
     images: [
       {
-        url: "/homepage.png",
+        url: "/homepage.webp",
         width: 1400,
         height: 1400,
         alt: "Pratyush Kumar Portfolio Home",
@@ -38,7 +38,7 @@ export const metadata = {
     card: "summary_large_image",
     title: INFO.main.title,
     description: SEO.find((item) => item.page === "home").description,
-    images: ["/homepage.png"],
+    images: ["/homepage.webp"],
     creator: "@nvmpratyush",
   },
 };
@@ -61,7 +61,7 @@ const Homepage = () => {
               <div className="homepage-image-container">
                 <div className="homepage-image-wrapper">
                   <img
-                    src="homepage.png"
+                    src="homepage.webp"
                     alt="about"
                     className="homepage-image"
                   />

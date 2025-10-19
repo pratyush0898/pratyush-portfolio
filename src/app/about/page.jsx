@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Pratyush Kumar",
     images: [
       {
-        url: "/about.jpg",
+        url: "/about.webp",
         width: 1200,
         height: 630,
         alt: "About Pratyush Kumar",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: `About | ${INFO.main.title}`,
     description: SEO.find((item) => item.page === "about").description,
-    images: ["/about.jpg"],
+    images: ["/about.webp"],
     creator: "@nvmpratyush",
   },
 };
@@ -58,7 +58,7 @@ const About = () => {
             <div className="about-image-container">
               <div className="about-image-wrapper">
                 <img
-                  src="../about.jpg"
+                  src="../about.webp"
                   alt="Pratyush Kumar"
                   className="about-image"
                 />

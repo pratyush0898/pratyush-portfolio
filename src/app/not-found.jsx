@@ -13,13 +13,13 @@ export const metadata = {
   openGraph: {
     title: `404 | ${INFO.main.title}`,
     description: "Oops! This page doesn't exist. Let's get you back home.",
-    images: [{ url: "/logo.png", width: 512, height: 512 }],
+    images: [{ url: "/logo.webp", width: 512, height: 512 }],
   },
   twitter: {
     card: "summary",
     title: `PAGE NOT FOUND | 404 | ${INFO.main.title}`,
     description: "Lost in space. The page you're looking for isn't here.",
-    images: ["/logo.png"]
+    images: ["/logo.webp"]
   }
 };
 

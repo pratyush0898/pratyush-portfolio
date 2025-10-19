@@ -21,9 +21,9 @@ export const metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", type: "image/x-icon" },
-      { url: "/logo.png", type: "image/png", sizes: "512x512" },
+      { url: "/logo.webp", type: "image/png", sizes: "512x512" },
     ],
-    apple: "/logo.png",
+    apple: "/logo.webp",
   },
 
   openGraph: {
@@ -33,13 +33,13 @@ export const metadata = {
     siteName: INFO.main.siteName,
     images: [
       {
-        url: "/homepage.png",
+        url: "/homepage.webp",
         width: 1400,
         height: 1400,
         alt: "Pratyush Kumar",
       },
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 524,
         height: 524,
         alt: "Pratyush Kumar logo",
@@ -53,7 +53,7 @@ export const metadata = {
     card: "summary_large_image",
     title: INFO.main.title,
     description: INFO.main.description,
-    images: ["/homepage.png", "/logo.png"],
+    images: ["/homepage.webp", "/logo.webp"],
     creator: INFO.main.creator,
   },
 

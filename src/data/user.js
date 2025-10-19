@@ -12,7 +12,7 @@ const INFO = {
     email: "pratyush.devloper@gmail.com",
     creator: "@nvmpratyush",
     url: "https://nvmpratyush.vercel.app",
-    logo: "../logo.png",
+    logo: "../logo.webp",
   },
 
   other: {
@@ -53,7 +53,7 @@ const INFO = {
     {
       title: "Next.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      level: "Advanced",
+      level: "Expert",
     },
     {
       title: "Svelte",
@@ -63,32 +63,32 @@ const INFO = {
     {
       title: "Angular",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
-      level: "Beginner",
+      level: "Intermediate",
     },
     {
       title: "Vue",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
-      level: "Beginner",
+      level: "Intermediate",
     },
     {
       title: "Node.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-      level: "Advanced",
+      level: "Expert",
     },
     {
       title: "NPM",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
-      level: "Advanced",
+      level: "Expert",
     },
     {
       title: "Python",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       title: "TailwindCSS v4+",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       title: "Bootstrap",
@@ -98,7 +98,7 @@ const INFO = {
     {
       title: "Figma",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-      level: "Advanced",
+      level: "Expert",
     },
     {
       title: "Flutter",
@@ -118,22 +118,22 @@ const INFO = {
     {
       title: "MongoDB",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      level: "Intermediate",
+      level: "Expert",
     },
     {
       title: "MYSQL",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       title: "Express.js",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      level: "Intermediate",
+      level: "Expert",
     },
     {
       title: "Sass",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       title: "Material UI",
@@ -143,12 +143,12 @@ const INFO = {
     {
       title: "Vercel",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
-      level: "Advanced",
+      level: "Expert",
     },
     {
       title: "Netlify",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg",
-      level: "Expert",
+      level: "Advanced",
     },
     {
       title: "Firebase",
@@ -158,7 +158,7 @@ const INFO = {
     {
       title: "Google Cloud",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       title: "Bash",
@@ -183,17 +183,17 @@ const INFO = {
     {
       title: "Debian",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/debian/debian-original.svg",
-      level: "Intermediate",
+      level: "Expert",
     },
     {
       title: "Arch Linux",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       title: "Docker",
       logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-      level: "Intermediate",
+      level: "Advanced",
     },
     {
       title: "PostgreSQL",
@@ -283,7 +283,7 @@ const INFO = {
     {
       title: "flollama",
       description:
-        "Flollama is an open-source AI chatbot built with Ollama and Next.js. Experience private, fast, and stylish AI chats powered by LLaMA 3.2.",
+        "Flollama is an open-source AI chatbot built with Gemini and Next.js. Experience private, fast, and stylish AI chats powered by Gemini 2.0-flash-lite.",
       logo: "https://flollama.in/favicon.svg",
       linkText: "View Project",
       link: "https://flollama.in/",

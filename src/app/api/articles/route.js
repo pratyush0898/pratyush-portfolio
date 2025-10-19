@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 const DEV_TO_API_URL = 'https://dev.to/api/articles';
 
-// In-memory cache for articles (5 minutes TTL)
+// In-memory cache for articles (40 minutes TTL)
 let articlesCache = null;
 let cacheTimestamp = null;
 const CACHE_DURATION = 40 * 60 * 1000; // 40 minutes in milliseconds
