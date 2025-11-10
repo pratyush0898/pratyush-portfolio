@@ -14,6 +14,7 @@ const NavBar = () => {
     { name: "Projects", path: "/projects" },
     { name: "Articles", path: "/articles" },
     { name: "Contact", path: "/contact" },
+    { name: "Support", path: "/support" }
   ];
 
   const getActive = (path) =>
