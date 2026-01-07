@@ -71,6 +71,12 @@ export const metadata = {
   },
 };
 
+/**
+ * Wraps page content with the application's global HTML layout including navigation, theme toggle, footer, and noscript notices.
+ * @param {Object} props - Component props.
+ * @param {import('react').ReactNode} props.children - Content to render inside the layout.
+ * @returns {JSX.Element} The root HTML structure for the page.
+ */
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
