@@ -96,6 +96,11 @@
   padding-bottom: 5px;
 }
 
+.homepage-certificates {
+  flex-basis: 600px;
+  padding-top: 30px;
+}
+
 .homepage-works {
   flex-basis: 600px;
   padding-top: 30px;
@@ -153,6 +158,12 @@
 
   .homepage-articles {
     flex-basis: auto;
+  }
+
+  .homepage-certificates {
+    flex-basis: auto;
+    margin-left: -25px;
+    margin-right: -25px;
   }
 
   .homepage-works {

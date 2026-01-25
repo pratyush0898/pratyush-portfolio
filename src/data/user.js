@@ -24,6 +24,17 @@ const INFO = {
     language: "English",
   },
 
+  certificates: [
+    {
+      title: "HackerRank Frontend Developer(React)",
+      icon: "/HackerRank_Logo.png",
+    },
+    {
+      title: "HackerRank Software Engineer",
+      icon: "/HackerRank_icon.png",
+    },
+  ],
+
   skills: [
     {
       title: "HTML5",

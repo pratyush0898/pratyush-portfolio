@@ -11,6 +11,7 @@ import "@/styles/homepage.css";
 import Socials from "@/components/homepage/socials";
 import Skills from "@/components/homepage/skills";
 import HomepageArticles from "@/components/homepage/HomepageArticles";
+import Certificate from "@/components/homepage/certificate";
 
 export const metadata = {
   title: INFO.main.title,
@@ -89,6 +90,9 @@ const Homepage = () => {
             <div className="homepage-after-title-right">
               <div className="homepage-works">
                 <Works />
+              </div>
+              <div className="homepage-certificates">
+                <Certificate />
               </div>
               <div className="homepage-skills">
                 <Skills />
