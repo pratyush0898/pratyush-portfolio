@@ -1,5 +1,5 @@
 import React from "react";
-import { faBriefcase, faCogs } from "@fortawesome/free-solid-svg-icons";
+import { faCogs } from "@fortawesome/free-solid-svg-icons";
 
 import Card from "../common/card";
 import INFO from "@/data/user";
